@@ -1,0 +1,64 @@
+{
+  "name": "Android File Manager",
+  "short_name": "File Manager",
+  "description": "A modern file manager application for Android",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2196F3",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'><rect fill='%232196F3' width='192' height='192'/><path fill='%23fff' d='M48 56h96v8H48zm0 16h96v8H48zm0 16h96v8H48zm0 16h96v8H48zm0 16h96v8H48z'/><path fill='%23fff' d='M40 40h112v112H40z' opacity='0.3'/></svg>",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><rect fill='%232196F3' width='512' height='512'/><path fill='%23fff' d='M128 144h256v32H128zm0 48h256v32H128zm0 48h256v32H128zm0 48h256v32H128z'/></svg>",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": [
+    "productivity",
+    "utilities"
+  ],
+  "shortcuts": [
+    {
+      "name": "Open File Manager",
+      "short_name": "Open",
+      "description": "Open the file manager",
+      "url": "/",
+      "icons": [
+        {
+          "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 96 96'><rect fill='%232196F3' width='96' height='96'/><path fill='%23fff' d='M24 28h48v8H24zm0 12h48v8H24zm0 12h48v8H24z'/></svg>",
+          "sizes": "96x96",
+          "type": "image/svg+xml"
+        }
+      ]
+    },
+    {
+      "name": "Search Files",
+      "short_name": "Search",
+      "description": "Search for files",
+      "url": "/?search=true",
+      "icons": [
+        {
+          "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 96 96'><rect fill='%23FF9800' width='96' height='96'/><circle cx='36' cy='36' r='16' fill='none' stroke='%23fff' stroke-width='4'/><line x1='50' y1='50' x2='70' y2='70' stroke='%23fff' stroke-width='4'/></svg>",
+          "sizes": "96x96",
+          "type": "image/svg+xml"
+        }
+      ]
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 540 720'><rect fill='%23f5f5f5' width='540' height='720'/><rect fill='%232196F3' width='540' height='60'/><text x='270' y='40' font-size='24' fill='%23fff' text-anchor='middle'>File Manager</text><rect fill='%23fff' y='60' width='540' height='660'/><rect fill='%23e0e0e0' x='20' y='80' width='500' height='50' rx='4'/><circle fill='%232196F3' cx='35' cy='105' r='8'/><text x='55' y='110' font-size='14'>Documents</text><rect fill='%23e0e0e0' x='20' y='150' width='500' height='50' rx='4'/><circle fill='%23FF9800' cx='35' cy='175' r='8'/><text x='55' y='180' font-size='14'>Downloads</text><rect fill='%23e0e0e0' x='20' y='220' width='500' height='50' rx='4'/><circle fill='%234CAF50' cx='35' cy='245' r='8'/><text x='55' y='250' font-size='14'>Pictures</text></svg>",
+      "sizes": "540x720",
+      "type": "image/svg+xml",
+      "form_factor": "narrow"
+    }
+  ]
+}
