@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Android File Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <button id="backBtn" class="header-btn">← Back</button>
+                <h1 id="currentPath" class="header-title">File Manager</h1>
+                <button id="searchBtn" class="header-btn">🔍 Search</button>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- File List -->
+            <div id="fileListContainer" class="file-list-container">
+                <div id="fileList" class="file-list">
+                    <!-- Files will be loaded here -->
+                </div>
+            </div>
+
+            <!-- Search Panel (Hidden by default) -->
+            <div id="searchPanel" class="search-panel hidden">
+                <div class="search-content">
+                    <input 
+                        type="text" 
+                        id="searchInput" 
+                        class="search-input" 
+                        placeholder="Enter filename to search..."
+                    >
+                    <button id="searchExecuteBtn" class="search-btn">Search</button>
+                    <button id="closeSearchBtn" class="close-search-btn">Close</button>
+                </div>
+                <div id="searchResults" class="search-results">
+                    <!-- Search results will be shown here -->
+                </div>
+            </div>
+        </main>
+
+        <!-- Action Menu (Context Menu) -->
+        <div id="contextMenu" class="context-menu hidden">
+            <button class="context-btn" id="copyBtn">📋 Copy</button>
+            <button class="context-btn" id="renameBtn">✏️ Rename</button>
+            <button class="context-btn" id="deleteBtn">🗑️ Delete</button>
+            <button class="context-btn" id="propertiesBtn">ℹ️ Properties</button>
+        </div>
+
+        <!-- Confirmation Dialog -->
+        <div id="confirmDialog" class="modal hidden">
+            <div class="modal-content">
+                <h2 id="confirmTitle">Confirm</h2>
+                <p id="confirmMessage">Are you sure?</p>
+                <div class="modal-buttons">
+                    <button id="confirmYesBtn" class="btn btn-danger">Yes</button>
+                    <button id="confirmNoBtn" class="btn btn-secondary">No</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Rename Dialog -->
+        <div id="renameDialog" class="modal hidden">
+            <div class="modal-content">
+                <h2>Rename File</h2>
+                <input type="text" id="renameInput" class="rename-input" placeholder="Enter new name">
+                <div class="modal-buttons">
+                    <button id="renameSaveBtn" class="btn btn-primary">Save</button>
+                    <button id="renameCancelBtn" class="btn btn-secondary">Cancel</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Paste Button (Floating) -->
+        <div id="pasteButton" class="paste-button hidden">
+            <button id="pasteBtnFloat">📌 Paste</button>
+        </div>
+
+        <!-- Toast Notification -->
+        <div id="toast" class="toast"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
